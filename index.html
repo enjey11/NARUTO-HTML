@@ -1,0 +1,418 @@
+<!DOCTYPE  html>
+<html  lang="es">
+
+	<head>
+		<title> NARUTO - Japanese Food</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<!-- 
+		CSS PAGE
+		-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- 
+		JQUERY PAGE
+		-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<div class="content">
+				<div class="logo">
+					<h1><a href="#" onClick="goto('#home', 'nav ul li a.home'); return false"><img src="images/logo.png"></a></h1>
+				</div>
+				<div class="taza">
+					<img src="images/tazahome.png">
+				</div>
+				<nav>
+					<ul>
+						<li><a class="home" href="#" onClick="goto('#home', this); return false">Home</a></li>
+						<li><a class="nosotros" href="#" onClick="goto('#nosotros', this); return false">Nosotros</a></li>
+						<li><a class="carta" href="#" onClick="goto('#carta', this); return false">carta</a></li>
+						<li><a class="contacto" href="#" onClick="goto('#contacto', this); return false">contacto</a></li>
+					</ul>
+				</nav>
+			</div>				
+		</header>
+		
+		<article>
+
+			<!--
+				SECTION HOME 
+			-->
+			<section id="margHome1"></section><!-- MARGIN LEFT HOME-->
+
+			<section id="home">
+				<div class="content">
+					<div class="boxHome-1">
+						<img src="images/logoPortada.png" class="logoHome">
+						<p>
+							Les damos la bienvenida a un viaje ancestral, en donde los aromas y lugares se mezclan llevando a tu paladar el único sabor tradicional japonés.
+						</p>
+						<img src="images/homeTexto1.png" class="txt">
+					</div>
+					<div class="boxHome-2">
+						<div class="circulo">
+							<h1>MISO RAMEN</h1>
+							<p>
+								Sopa de fideo ramen japonés y caldo a base de miso acompañado de un corte de carne de cerdo y verduras.
+							</p>
+							<a href="#" onClick="goto('#carta', 'nav ul li a.carta'); return false"></a>
+						</div>
+						<div class="arrow">
+							<img src="images/homeTexto.png">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="margHome2"></section><!-- MARGIN RIGHT HOME-->
+			<!--
+				/SECTION HOME 
+			-->
+
+			<!--
+				SECTION NOSOTROS 
+			-->
+			<section id="margNosotros1"></section><!-- MARGIN LEFT NOSOTROS-->
+
+			<section id="nosotros">
+				<div class="content">
+					<div class="boxNosotros">
+						<h1>
+							historia<br>
+							de la carta
+						</h1>
+						<p>
+							Naruto - Japanese Food, un lugar donde tus cinco sentidos te transportaran al país del sol naciente para que deleites la verdadera comida tradicional japonesa.
+						</p>
+						<p>
+							Es una invitación a todos los amantes de esta cultura a disfrutar no sólo en el paladar sino también en el olfato y la vista con su amplia variedad de platos que brinda la carta de Naruto.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="margNosotros2"></section><!-- MARGIN RIGHT NOSOTROS-->
+			<!--
+				/SECTION NOSOTROS 
+			-->
+
+			<!--
+				SECTION CARTA 
+			-->
+			<section id="margCarta1"></section><!-- MARGIN LEFT CARTA-->
+
+			<section id="carta">
+				<div class="content">
+					<div class="boxCarta">
+						<div class="box">
+							<img src="images/carta/carta-1.png">
+							<div class="over">
+								<p>
+									<span>MISO RAMEN</span><br>
+									Sopa de fideo ramen japonés y caldo a base de miso acompañado de 1 corte de carne de cerdo y verduras. 
+								</p>
+							</div>
+						</div>
+						<div class="box">
+							<img src="images/carta/carta-2.png">
+							<div class="over">
+								<p>
+									<span>GYOZA</span><br>
+									Empanaditas rellenas con carne de cerdo y verduras, cocidas a vapor y elladas a la plancha
+								</p>
+							</div>
+						</div>
+						<div class="box">
+							<img src="images/carta/carta-3.png">
+							<div class="over">
+								<p>
+									<span>YAKITORI</span><br>
+									Brochetas de pollo y  negi (poro japonés) bañados en salsa Teriyaki.
+								</p>
+							</div>
+						</div>
+						<div class="box">
+							<img src="images/carta/carta-4.png">
+							<div class="over">
+								<p>
+									<span>KARE RAISU</span><br>
+									Guiso de curry con carne de cerdo y verduras acompañado de arroz japonés. 
+								</p>
+							</div>
+						</div>
+						<div class="box logo">
+							<img src="images/logoCarta.png" class="logo">
+							<p class="logoTxt">
+								Ven a nuestro local y conoce todos los platos que tenemos para tí.
+							</p>
+						</div>
+						<div class="box">
+							<img src="images/carta/carta-5.png">
+							<div class="over">
+								<p>
+									<span>KATSUDON</span><br>
+									Carne de cerdo empanizado acompañado de gajos de cebolla y huevo cocidos en salsa ligeramente dulce, servido sobre una cama de arroz japonés.
+								</p>
+							</div>
+						</div>
+						<div class="box">
+							<img src="images/carta/carta-6.png">
+							<div class="over">
+								<p>
+									<span>YAKIMESHI</span><br>
+									Arroz frito con pollo y verduras, envuelta en tortilla de huevo, bañado en salsa shiitake.
+								</p>
+							</div>
+						</div>
+						<div class="box">
+							<img src="images/carta/carta-7.png">
+							<div class="over">
+								<p>
+									<span>NARUTO CHICKEN</span><br>
+									Pollo frito crocante bañado en salsa de negi (poro japonés) acompañado de ensalada de verduras con salsa de miso y arroz japonés.
+								</p>
+							</div>
+						</div>
+						<div class="box">
+							<img src="images/carta/carta-8.png">
+							<div class="over">
+								<p>
+									<span>YASAIITAME</span><br>
+									Pollo con verduras frescas salteadas al wok acompañado de arroz japonés. 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="margCarta2"></section><!-- MARGIN RIGHT CARTA-->
+			<!--
+				/SECTION CARTA 
+			-->
+
+			<!--
+				/SECTION CONTACTO 
+			-->
+			<section id="margContacto1"></section><!-- MARGIN RIGHT CONTACTO-->
+
+			<section id="contacto">
+				<div id="map-canvas"></div>
+				<div class="content">
+					<div class="boxContacto" id="boxContacto">
+						<div class="info">
+							<p>
+								Visítanos en nuestro local en el distrito de San Borja para disfrutar de los mejores platos de comida japonesa, están bienvenidos!
+							</p>
+							<p>
+								<label class="dir">Av. Aviación 2982 - San Borja</label>
+								<label class="tel">593-5689</label>
+								<label class="email">info@naruto.pe</label>
+							</p>
+							<p>
+								<strong>Horario de de atención</strong><br>
+								<span>Lunes a sábado: 12.30pm a 4pm / 7:00pm a 11:15pm</span>
+							</p>
+							<p class="fb"><a href="https://www.facebook.com/NarutoJapaneseFood" target="_blank">Naruto Japanese Food</a></p>
+						</div>
+						<div class="separador"></div>
+						<div class="form">
+							<p><img src="images/contactoTexto.png"></p>
+							<form name="frm-contacto" id="frm-contacto" method="post">
+								<div class="row">
+									<input class="required" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+								</div>
+								<div class="row">
+									<input class="required" type="text" name="email" id="email" placeholder="E-mail">
+								</div>
+								<div class="row">
+									<textarea class="required" name="msj" id="msj" placeholder="Comentario"></textarea>
+								</div>
+								<div class="row">
+									<button type="submit">Enviar</button>
+								</div>
+							</form>								
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="margContacto2"></section><!-- MARGIN RIGHT CONTACTO-->
+			<!--
+				/SECTION CONTACTO 
+			-->
+
+		</article>
+
+		<footer>
+			<div class="content">
+				<div class="Left">
+
+					<a href="javascript: void(0);"onclick="window.open('http://www.facebook.com/sharer.php?u=http://flambee.neybec.com/naruto/','popup', 'toolbar=0, status=0, width=650, height=450');">
+					<img src="images/fb.png" alt="Compartir en Facebook" style="margin-right: 10px" /></a>
+
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/1e6W44P" data-text="NARUTO - Japanese Food. Te invitamos a un viaje que deleites la verdadera comida tradicional japonesa " data-lang="es" data-count="none" data-dnt="true">Twittear</a>
+				</div>
+				<div class="Right">
+					<p>Powered by</p>
+					<a class="flambee" href="http://www.flambee.com.ar/" target="_blank"></a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- 
+		SCRIPT PAGE
+		-->
+		<script src="js/functions.js"></script>
+		<script src="js/jquery.validate.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<!--[if IE]>
+		<script src="js/placeholder.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('[placeholder]').placeholder();   
+		 });
+		</script>
+		<![endif]-->
+
+		<script>
+
+			function nuevoAjax()
+	        { 
+	            var xmlhttp=false; 
+	            try 
+	            { 
+	                // No IE
+	                xmlhttp=new ActiveXObject("Msxml2.XMLHTTP"); 
+	            }
+	            catch(e)
+	            { 
+	                try
+	                { 
+	                    // IE 
+	                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); 
+	                } 
+	                catch(E) { xmlhttp=false; }
+	            }
+	            if (!xmlhttp && typeof XMLHttpRequest!="undefined") { xmlhttp=new XMLHttpRequest(); } 
+	            return xmlhttp; 
+	        }
+	    
+	        $.validator.setDefaults({
+	            submitHandler: function() 
+	                {               
+	                    var nombre = $("#nombre").val();                                    
+							email = $("#email").val();
+							msj = $("#msj").val();
+	                    var ajax=nuevoAjax();
+	                    ajax.open("POST", "send-email.php", true);
+	                    ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	                    ajax.send("nombre="+nombre+"&email="+email+"&mensaje="+msj);
+	                    
+	                    ajax.onreadystatechange=function()
+	                    {
+	                        if (ajax.readyState==4)
+	                        {
+	                            var respuesta=ajax.responseText;
+	                            if(respuesta=="OK")
+	                            {
+	                            	//alert("enviado");                                
+	                            	$('.form').empty();
+	                            	$('.form').append('<div class="send-gracias"><img src="images/txt-gracias.png"><p>¡Muchas gracias por tu mensaje!</p></div>');
+	                            }
+	                            else 
+	                            {
+	                                //alert("no se pudo enviar");
+	                                $('.form').empty();
+	                                $('.form').append('<div class="send-gracias"><img src="images/txt-gracias.png"><p>¡Muchas gracias por tu mensaje!</p></div>');
+	                            }
+	                        }
+	                    }
+	                }
+	        });
+
+		</script>
+
+		<script>
+
+			var map;
+			var naruto = new google.maps.LatLng(-12.099776912949663, -76.99733293978119);
+			var narutoMarker = new google.maps.LatLng(-12.099255010821027, -77.00219310251617);
+
+			var MY_MAPTYPE_ID = 'custom_style';
+
+			function initializeMap() {
+
+			  var featureOpts = [
+			    {
+			      stylers: [
+			        { hue: '#a6ebff' },
+			        { visibility: 'simplified' },
+			        { gamma: 0.5 },
+			        { weight: 0.5 }
+			      ]
+			    },
+			    {
+			      elementType: 'labels',
+			      stylers: [
+			        { visibility: 'on' }
+			      ]
+			    },
+			    {
+			      featureType: 'water',
+			      stylers: [
+			        { color: '#a6ebff' }
+			      ]
+			    }
+			  ];
+
+			  var mapOptions = {
+			    zoom: 18,
+			    center: naruto,
+			    mapTypeControlOptions: {
+			      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+			    },
+			    mapTypeId: MY_MAPTYPE_ID,
+			    zoomControl: false,
+        		disableDefaultUI: true,
+        		scaleControl: false
+			  };
+
+			  map = new google.maps.Map(document.getElementById('map-canvas'),
+			      mapOptions);
+
+			  var styledMapOptions = {
+			    name: 'Custom Style'
+			  };
+
+			  var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+
+			  var marker = new google.maps.Marker({
+
+				map: map,
+				title: 'Naruto',
+				animation: google.maps.Animation.DROP,
+				position: narutoMarker,
+				icon: "images/iconNaruto.png",
+
+		      });
+
+			  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initializeMap);
+
+    	</script>
+
+		<!--
+		SCRIPT TW
+		-->
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+	</body>
+
+</html>
