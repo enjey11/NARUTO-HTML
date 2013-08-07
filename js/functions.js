@@ -20,6 +20,15 @@ jQuery.marginBox = function(boxId){
 	$(boxId).css({marginTop:marginBoxId});
 }
 
+jQuery.intro = function(){
+	var H = $('body').height();
+	$('#swf').animate({
+		"top": "+=1200"
+	}, "slow", function(){
+		$("#swf").remove();
+	});
+}
+
 $(window).resize(function() {
 	$.initialize();
 });
@@ -28,20 +37,35 @@ function goto(id, t){
 	var WP = $('body').width();
 	var MP = (WP - 960)/2;
 	var NL = ($(id).position().left) - MP;
-    //animate to the div id.
-    //$('article').animate({"left": -($(id).position().left)}, 600);
-    $('article').animate({"left": -NL}, 600);
-    // remove "active" class from all links inside #nav
-    $('nav li a').removeClass('active');
-    // add active class to the current link
-    $(t).addClass('active');
+	//animate to the div id.
+	//$('article').animate({"left": -($(id).position().left)}, 600);
+	$('article').animate({"left": -NL}, 600);
+	// remove "active" class from all links inside #nav
+	$('nav li a').removeClass('active');
+	// add active class to the current link
+	$(t).addClass('active');
 }
 
 $(window).ready(function(){
 	//inicializar
 	$.initialize();
+	//cargar swf
+	$('#swf .content').flash({
+		swf: 'swf/intro.swf',
+		width:720,
+		height:480,
+		play:true,
+		wmode: 'transparent',
+		loop: false,
+		menu: false
+	});
 	// activar menu
 	$('nav li:first-child a').addClass('active');
+	// saltar intro
+	$('#swf .btn').click(function(){
+		$.intro();
+		//$.lastFrame();
+	});
 	// home al cargar pagina
 	var WP1 = $('body').width();
 	var MP1 = (WP1 - 960)/2;
